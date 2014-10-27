@@ -7,7 +7,7 @@
         "name": "Anton Nosenko",
         "email": "nos.anton@gmail.com"
     }],
-    "main": "underscore-matrix.js",
+    "main": "lib/underscore-matrix.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/voogryk/underscore-matrix"
