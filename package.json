@@ -1,19 +1,19 @@
 {
     "name": "underscore-matrix",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Module which contains the standard operation of the square matrices",
     "author": "Anton Nosenko <nos.anton@gmail.com>",
     "contributors": [{
         "name": "Anton Nosenko",
         "email": "nos.anton@gmail.com"
     }],
-    "main": "underscore-matrix/underscore-matrix.js",
+    "main": "underscore-matrix.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nodejitsu/browsenpm.org"
+        "url": "https://github.com/voogryk/underscore-matrix"
     },
     "bugs": {
-        "url": "https://github.com/nodejitsu/browsenpm.org/issues"
+        "url": "https://github.com/voogryk/underscore-matrix/issues"
     },
     "keywords": [
         "matrix",
