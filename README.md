@@ -6,7 +6,7 @@ Module which contains the standard operation of the square matrices.
 Version
 ------
 
-0.0.4
+0.0.5
 
 Installation
 ------------
@@ -60,8 +60,7 @@ Functions
     {
         error:"Some error message",       //or false if no errors
         
-        value:[[1,1,1],[2,2,2],[3,3,3]]   //Result matrix with float numbers - multiply of matrixA*matrixB 
-                                          //(can be undefinde if error)
+        value:[[1,1,1],[2,2,2],[3,3,3]]   //Result matrix with float numbers - multiply of matrixA*matrixB (can be undefinde if error)
     }
     ```
     **IMPORTANT!**  *'matrixA' and 'matrixB' must be square with the same size* 
