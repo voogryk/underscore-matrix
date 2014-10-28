@@ -1,6 +1,6 @@
 {
     "name": "underscore-matrix",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "description": "Module which contains the standard operation of the square matrices",
     "author": "Anton Nosenko <nos.anton@gmail.com>",
     "contributors": [{

@@ -6,7 +6,7 @@ Module which contains the standard operation of the square matrices.
 Version
 ------
 
-0.0.5
+0.1.0
 
 Installation
 ------------
@@ -26,14 +26,14 @@ Functions
 --------------
 
  - Determinant
+ - Summary
+ - Scalar summary
  - Multiply
+ - Scalar multiply
+ - Matrix inversion
  - Minor
  - Identity matrix
  - Check is array square matrix
- - ~~Summary~~ *(Not implemented yet)*
- - ~~Scalar summary~~ *(Not implemented yet)*
- - ~~Inverse~~ *(Not implemented yet)*
- - ~~Scalar multiply~~ *(Not implemented yet)*
 
     ###Determinant
     
@@ -48,6 +48,49 @@ Functions
         value:1.23                   //Float number - determinant of matrix (can be undefinde if error)
     }
     ```
+    ###Summary
+    ```javascript
+    _matrix.summary(matrixA,matrixB);
+    //or
+    _matrix.sum(matrixA,matrixB);
+    ```
+    It will return object:
+    
+    ```javascript
+    {
+        error:"Some error message",       //or false if no errors
+        value:[[1,1,1],[2,2,2],[3,3,3]]   //Result matrix with float numbers - summary of matrixA and matrixB (can be undefinde if error)
+    }
+    ```
+    **IMPORTANT!**  *'matrixA' and 'matrixB' must be square with the same size* 
+    ###Scalar summary
+    ```javascript
+    _matrix.sSummary(scalarNumber,matrix);
+    //or
+    _matrix.ssum(scalarNumber,matrix);
+    ```
+    It will return object:
+    
+    ```javascript
+    {
+        error:"Some error message",       //or false if no errors
+        value:[[1,1,1],[2,2,2],[3,3,3]]   //Result matrix with float numbers - summary of scalarNumber and matrix (can be undefinde if error)
+    }
+    ```
+    Sample:
+    ```javascript
+    var sum = _matrix.ssum(1,[
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]).value;
+    
+    //sum = [
+    //          [2,3,4],
+    //          [5,6,7],
+    //          [8,9,10]
+    //      ]
+    ```
     ###Multiply
     ```javascript
     _matrix.multiply(matrixA,matrixB);
@@ -59,11 +102,51 @@ Functions
     ```javascript
     {
         error:"Some error message",       //or false if no errors
-        
         value:[[1,1,1],[2,2,2],[3,3,3]]   //Result matrix with float numbers - multiply of matrixA*matrixB (can be undefinde if error)
     }
     ```
     **IMPORTANT!**  *'matrixA' and 'matrixB' must be square with the same size* 
+    ###Scalar multiply
+    ```javascript
+    _matrix.sMultiply(scalarNumber,matrix);
+    //or
+    _matrix.smul(scalarNumber,matrix);
+    ```
+    It will return object:
+    
+    ```javascript
+    {
+        error:"Some error message",       //or false if no errors
+        value:[[1,1,1],[2,2,2],[3,3,3]]   //Result matrix with float numbers - multiply of scalarNumber and matrix (can be undefinde if error)
+    }
+    ```
+    Sample:
+    ```javascript
+    var mul = _matrix.ssum(2,[
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]).value;
+    
+    //mul = [
+    //          [2,4,6],
+    //          [8,10,12],
+    //          [14,16,18]
+    //      ]
+    ```
+    ###Matrix inversion
+    ```javascript
+    _matrix.inverse(matrix);
+    ```
+     It will return object:
+    
+    ```javascript
+    {
+        error:"Some error message",       //or false if no errors
+        value:[[1,1,1],[2,2,2],[3,3,3]]   //Inverse of a matrix (can be undefinde if error)
+    }
+    ```
+     **IMPORTANT!**  *determinant of matrix can't be 0* 
     ###Minor
     Return minor of matrix
     ```javascript
@@ -115,5 +198,9 @@ Functions
     }
     ```  
    If some of matrix elements is numeric string, this function will convert them to float numbers and return matrix with only float type elements.
-    
-    
+
+License
+---------
+MIT
+
+####Enjoy!
