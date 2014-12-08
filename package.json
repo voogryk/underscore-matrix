@@ -1,7 +1,7 @@
 {
     "name": "underscore-matrix",
-    "version": "0.1.0",
-    "description": "Module which contains the standard operation of the square matrices",
+    "version": "0.2.0",
+    "description": "Module which contains the standard operation with the square matrices",
     "author": "Anton Nosenko <nos.anton@gmail.com>",
     "contributors": [{
         "name": "Anton Nosenko",
